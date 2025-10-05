@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinder Web Effect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      .details{
+        background: linear-gradient(to bottom, transparent, rgb(0,0,0,0.9));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-black font-['helvetica_now_display']">
+      <div class="imagecontainer w-full h-screen relative overflow-hidden">
+        <div class="maincard z-[3] w-[130%] absolute h-[130%]">
+          <img class="w-full h-full object-cover" src="./assets/image-4.jpg" />
+        </div>
+        <div
+          class="incomingcard z-[2] w-[130%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[13element 0%]">
+          <img class="w-full h-full object-cover" src="./assets/image-5.jpg" />
+        </div>
+      </div>
+      <div class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between">
+        <div class="navbar px-5 py-6  flex justify-between items-center text-white">
+          <div class="prflimg w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src=""
+            />
+          </div>
+          <h3 class="text-2xl font-medium tracking-tighter">They liked you.</h3>
+          <div class="chatcon relative flex items-center justify-center rounded-full w-[3rem] h-[3rem] bg-white/20">
+            <i class="opacity-80 ri-chat-3-fill"></i>
+            <div class="badge flex items-center justify-center rounded-full absolute top-0 right-0 -translate-y-[5px] -translate-x-[3px] w-5 h-5 bg-red-600 rounded-lg">
+              <h5 class="text-[13px] font-[400]">5</h5>
+            </div>
+          </div>
+        </div>
+        <div class="detailscontainer" w-full">
+          <div class="details px-5 py-6 w-full">
+          <div class="element location flex gap-4">
+            <i class="w-[1.6rem] h-[1.6rem] bg-white flex items-center justify-center rounded-full font-semibold ri-corner-left-up-line"></i>
+            <h3 class="text-white"></h3>
+          </div>
+          <div class="element name flex gap-5 text-white mt-1">
+            <h1 class="font-regular tracking-tighter text-7xl"></h1>
+            <h1 class="font-regular tracking-tighter text-7xl opacity-30"></h1>
+          </div>
+          <div class="element tags flex gap-3 text-white mt-4">
+            <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+              <i class="text-sm ri-music-2-fill"></i>
+              <div class="text-sm text-lg tracking-tight">Music</div>
+            </div>
+          </div>
+          <div class="element bio text-white/80 mt-5">
+            <h3 class="text-xl">Bio</h3>
+            <p class="text-xl mt-3"></p>
+          </div>
+          <div class="element flex items-start mt-10 gap-1">
+            <button class="deny py-3 rounded-lg w-1/2 bg-white">
+              <i class="text-3xl font-semibold ri-close-line"></i>
+            </button>
+            <button class="accept py-3 rounded-lg w-1/2 bg-[#FC5149]">
+              <i class="text-3xl font-semibold text-white ri-heart-3-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
